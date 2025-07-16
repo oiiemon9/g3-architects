@@ -48,12 +48,12 @@
   font-size: 4rem;
   font-weight: 700;
 }
-.hero-section-containt p {
+.all-p-style {
   margin-top: 10px;
   color: #727272;
   font-size: 1rem;
 }
-.hero-section-containt button {
+.Explore-More-btn {
   padding: 20px 24px;
   font-size: 1.25rem;
   font-weight: 600;
@@ -71,6 +71,32 @@
   width: 100%;
   margin-bottom: 45px;
 }
+.features-container {
+  display: flex;
+  margin-top: 85px;
+  gap: 50px;
+  align-items: center;
+}
+.features-imges {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  flex: 0 0 50%;
+}
+.features-img {
+  width: 100%;
+}
+.features-img img {
+  width: 100%;
+}
+.features-contant {
+  flex: 0 0 calc(50% - 50px);
+}
+.features-contant h2 {
+  font-size: 2.813rem;
+  color: #131313;
+}
+
 /* mobile responsive */
 @media screen and (max-width: 576px) {
   .navbar {
@@ -87,6 +113,12 @@
   .hero-section-containt h1 {
     font-size: 2rem;
   }
+  .p-br {
+    display: none;
+  }
+  .features-container {
+    flex-direction: column-reverse;
+  }
 }
 /* tablet responsive */
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -102,5 +134,8 @@
   }
   .hero-section-containt h1 {
     font-size: 3rem;
+  }
+  .features-container {
+    flex-direction: column-reverse;
   }
 }
