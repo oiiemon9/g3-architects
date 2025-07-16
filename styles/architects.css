@@ -95,6 +95,50 @@
 .features-contant h2 {
   font-size: 2.813rem;
   color: #131313;
+  font-weight: 700;
+}
+.will-section {
+  margin-top: 130px;
+  display: flex;
+  gap: 146px;
+}
+.will-contant-container {
+  flex: 0 0 calc(50% - 65px);
+}
+.will-image-container {
+  flex: 0 0 calc(50% - 65px);
+}
+.will-images {
+  width: 100%;
+  position: relative;
+}
+.will-images img {
+  width: 100%;
+}
+.will-title {
+  font-size: 2.813rem;
+  font-weight: 700;
+  color: #131313;
+}
+.will-box {
+  border: 1px solid gainsboro;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.will-box h6 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #131313;
+}
+.will-image-experience {
+  position: absolute;
+  background-color: #ff900e;
+  padding: 45px;
+  border-radius: 20px;
+  text-align: center;
+  bottom: -50px;
+  left: -50px;
 }
 
 /* mobile responsive */
@@ -119,6 +163,13 @@
   .features-container {
     flex-direction: column-reverse;
   }
+  .will-section {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .will-image-experience {
+    left: 0;
+  }
 }
 /* tablet responsive */
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -137,5 +188,12 @@
   }
   .features-container {
     flex-direction: column-reverse;
+  }
+  .will-section {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .will-image-experience {
+    left: 0;
   }
 }
